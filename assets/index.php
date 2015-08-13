@@ -15,7 +15,7 @@
 		<p class="sub-headline">eine Auswahl unserer Projekte</p>
 	</div>
 	<div class="landingpage-portfolio">
-		<div class="preview-portfolio pv1">
+		<div class="preview-portfolio item pv1">
 			<div class="table">
 				<div class="table-cell">
 					<div class="pv-hover">
@@ -42,7 +42,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="preview-portfolio pv2">
+		<div class="preview-portfolio item pv2">
 			<div class="table">
 				<div class="table-cell">
 					<div class="pv-hover">

@@ -44,13 +44,54 @@
 			</div>
 		</div>
 	</div>
-	<?php
-		if( have_rows('portfolio_repeater') ):
-			while ( have_rows('portfolio_repeater') ) : the_row();
-		    	
-		        the_sub_field('name');
-			endwhile;
-	?>
+	
+	<div class="landingpage-portfolio">
+		<?php if( have_rows('portfolio_repeater') ): ?>
+		<div class="row">
+			<?php while ( have_rows('portfolio_repeater') ) : the_row(); ?>
+			<div class="preview-portfolio item col-md-12 col-xs-12" style="background: url('<?php the_sub_field('image'); ?>');">
+				<div class="table">
+					<div class="table-cell">
+						<div class="pv-hover">
+							<div class="square">
+								<img class="hover-icon link" src="img/hover-icon.png" alt="">
+								<p class="hover-firma" ><?php the_sub_field('name'); ?></p>
+								<p class="hover-branche" ><?php the_sub_field('branche'); ?></p>
+								<img class="hover-icon hover-drop" src="img/hover-drop.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php endwhile; ?>
+		</div>
+		<?php endif; ?>
+	</div>
+</section>
+
+<section class="leitbild">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><?php the_field('headline_leitbild'); ?></h1>
+				<span class="line"></span>
+				<h3><?php the_field('subheadline_leitbild'); ?></h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p class="quote"><?php the_field('zitat_leitbild'); ?></p>
+		</div>
+		<div class="col-md-6">
+			<img src="<?php the_field('bild_zitat'); ?>">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<a href="<?php the_field('link_zitat'); ?>" class="btn lined">mehr erfahren</a>
+		</div>
+	</div>
 </section>
 <!-- News Section on Frontpage -->
 <section class="news">
@@ -69,13 +110,13 @@
 						</article>
 					</div>
 				<?php endwhile; ?>
-			</div><!-- ENDE .col-md-9 -->
+			</div>
 			<aside class="col-md-3 col-xs-12">
 				<h3>Veranstaltungen</h3>
 				<?php get_sidebar(); ?>
 			</aside>
 		</div>
-	</div><!-- ENDE .container -->
+	</div>
 </section>
 <section class="abteilungen">
 	<div class="container">
