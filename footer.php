@@ -1,3 +1,7 @@
+<section class="contact">
+	
+</section>
+
 <footer>
 	<div class="container">
 		<div class="row">
