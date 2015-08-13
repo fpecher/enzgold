@@ -14,12 +14,6 @@
     </head>
     <body>
     	<header>
-    		<div class="container">
-    			<div class="row">
-                    <div class="col-md-12">
-                        <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-                    </div>
-			    </div>
-		    </div>
+            <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
         </header>
 	   

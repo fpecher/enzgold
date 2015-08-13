@@ -12,11 +12,17 @@
 <section class="videobg">
 	<div class="table">
 		<div class="table-cell">
-			<div class="headline">
-				<h1><?php the_field('headline'); ?></h1>
-			</div>
-			<div class="intro">
-				<p><?php the_field('introtext'); ?></p>
+			<h1><?php the_field('headline_video'); ?></h1>
+			<p><?php the_field('introtext_video'); ?></p>
+		</div>
+	</div>
+</section>
+
+<section class="comm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><?php the_field('headline_kommunikation'); ?></h1>
 			</div>
 		</div>
 	</div>

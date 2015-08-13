@@ -1,16 +1,16 @@
 <?php
+function grid_style() {
+	wp_register_style('grid-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+    wp_enqueue_style( 'grid-style');
+}
+add_action('wp_print_styles', 'grid_style');
+
 function main_style() {
 	wp_register_style('main-style', get_template_directory_uri() . '/css/main.css');
     wp_enqueue_style( 'main-style');
 
 }
 add_action('wp_print_styles', 'main_style');
-
-function grid_style() {
-	wp_register_style('grid-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
-    wp_enqueue_style( 'grid-style');
-}
-add_action('wp_print_styles', 'grid_style');
 
 // function FontAwesome() {
 // 	wp_register_style('FontAwesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
