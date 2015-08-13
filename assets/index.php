@@ -75,8 +75,17 @@
 			</div>
 		</div>
 		
-		<div class="preview-portfolio pv3"></div>
-		<div class="preview-portfolio pv4"></div>
+		<section class="kontakt">
+			<h1>kontakt</h1>
+			<form action="post">
+				<input type="text" class="ip-name" name="name" placeholder="name">
+				<input type="text" class="ip-mail" name="e-mail" placeholder="e-mail Adresse">
+				<input type="text" class="ip-betreff" name="betreff" placeholder="betreff">
+				<textarea class="ip-nachricht" name="nachricht" placeholder="Ihre Nachricht an uns"></textarea>
+				<button>kontakt aufnehmen</button>
+			</form>
+		</section>
+		
 			<script>	
 				$(document).ready(function() {
 				    $(".item").hover(function () {

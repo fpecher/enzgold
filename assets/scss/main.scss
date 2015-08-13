@@ -74,3 +74,86 @@
 	-webkit-transform: translate(-10px, -10px);
 }
 a {text-decoration: none;}
+
+
+
+
+.kontakt {
+	width: 90%;
+	margin: 0 auto;
+	background: $beige;
+	text-align: center;
+}
+input,textarea {
+	background: #c6c2b9;
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: $pfnt;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #eee;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #eee;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #eee;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #eee;
+}
+.ip-name {
+	width: 48%;
+	height: 50px;
+	float: left;
+	border: none;
+	padding-left: 16px;
+	color: white;
+}
+.ip-mail {
+	width: 48%;
+	height: 50px;
+	border: none;
+	float: right;
+	padding-left: 16px;
+	color: white;
+}
+input:hover, input:focus,textarea:hover, textarea:focus {
+	/*border-bottom: 1px solid $gold;*/
+	box-shadow: inset 0 0 3px $gold;
+
+}
+.ip-betreff {
+	width: 100%;
+	box-sizing: border-box;
+	height: 50px;
+	border: none;
+	padding-left: 16px;
+	color: white;
+}
+.ip-nachricht {
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	border: none;
+	padding-left: 16px;
+	padding-top: 16px;
+	color: white;
+	resize: none;
+}
+button {
+	width: 230px;
+	background: $gold;
+	height: 50px;
+	border: none;
+	color: white;
+	margin-top: 30px;
+	font-size: 16px;
+	font-family: $pfnt;
+	margin-bottom: 50px;
+}
+*:focus{
+    outline: 0;
+}
