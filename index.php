@@ -78,18 +78,20 @@
 				<h3><?php the_field('subheadline_leitbild'); ?></h3>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<p class="quote"><?php the_field('zitat_leitbild'); ?></p>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="quote"><?php the_field('zitat_leitbild'); ?></p>	
+			</div>
+			<div class="col-md-6">
+				<img src="<?php the_field('bild_zitat'); ?>">
+			</div>
 		</div>
-		<div class="col-md-6">
-			<img src="<?php the_field('bild_zitat'); ?>">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<a href="<?php the_field('link_zitat'); ?>" class="btn lined">mehr erfahren</a>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="btnholder">
+					<a href="<?php the_field('link_zitat'); ?>" class="btn lined">mehr erfahren</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

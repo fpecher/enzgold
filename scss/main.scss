@@ -50,15 +50,79 @@ section{width: 100%; padding: 80px 0;}
 .table-cell{display: table-cell; vertical-align: middle; width: 100%; text-align: center;}
 .circles{width: 996px; height: auto;}
 
+//Blockquote style
+.quote{
+	font-family: $sfnt; color: #898787; font-size: 30px; line-height: 1.7; text-align: center; position: relative;
+	
+	&:before{
+		content: "\201C";
+		font-family: $sfnt;
+		font-size: 400px;
+		opacity: 0.3;
+		position: absolute;
+		color: #dcdcdc;
+		top: -240px;
+		left: -40px;
+	}
+}
+
+
 //Button style
+.btnholder{text-align: center; width: 100%;}
+
 .btn{
 	width: auto;
-	padding: 20px 50px;
+	margin-top: 30px;
+	padding: 20px 25px;
 	display: inline-block;
 	color: $gold;
 	font-family: $pfnt;
 	font-size: 20px;
 	font-weight: 300;
+}
+
+.lined{
+
+	&:after{
+		content: ''; border-right: 1px $gold solid; padding: 5px 25px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&:before{
+		content: ''; border-left: 1px $gold solid; padding: 5px 25px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&:hover{padding: 20px 50px;
+
+		&:before{
+			border-left: 1px #fff solid; padding: 0; 
+
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:after{
+			border-right: 1px #fff solid; padding: 0; 
+
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
 }
 
 .videobg{
@@ -83,6 +147,6 @@ section{width: 100%; padding: 80px 0;}
 }
 
 .leitbild{
-	background: #FFF;
-	.quote{font-family: $sfnt; color: #898787; font-size: 30px; line-height: 1.7; text-align: center;}
+	h3{margin-bottom: 60px;}
+	.quote{margin-top: 80px;}
 }
