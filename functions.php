@@ -35,7 +35,8 @@ add_action( 'wp_enqueue_scripts', 'main' );
 //MENÜS
 if ( function_exists('register_nav_menus') ) {
     register_nav_menus(array(
-        'main' => __( 'Main Menue' )
+        'main' => __( 'Main Menue' ),
+        'footer' => __( 'Footer Menu' )
     ));
 }
 //Widgetarea
