@@ -6,7 +6,11 @@
 *, *:before, *:after{box-sizing: border-box; -webkit-box-sizing: border-box;}
 
 
-h1{font-size: 60px; color: $gold; font-family: $pfnt; font-weight: 300; text-align: center;}
+h1{font-size: 60px; color: $gold; font-family: $pfnt; font-weight: 300; text-align: center; margin-top: 0;}
+
+.col-md-12{
+	img{max-width: 100%;}
+}
 
 header{
 	position: fixed;
@@ -47,12 +51,29 @@ header{
 	background: url(../img/bg-head.jpg) no-repeat;
 	background-size: cover;
 
-	h1{color: #FFF; font-size: 60px; font-family: $pfnt, sans-serif; font-weight: 300; margin-top: 0; margin-bottom: 60px;}
+	h1{color: #FFF; font-size: 60px; font-family: $pfnt, sans-serif; font-weight: 300; margin: 0; margin-top: 0; margin-bottom: 60px;}
 	p{color: #FFF; font-size: 21px; font-family: $sfnt, serif; font-weight: 400; line-height: 1.8;}
 }
 
 
 
 .comm{
-	padding-top: 80px;
+	padding: 80px 0;
+
+	h1{margin-bottom: 70px;}
+
+	.col-md-12{text-align: center;}
+	.circles{width: 996px; height: auto;}
+}
+
+.portfolio{
+	background: $beige;
+	padding: 80px 0;
+	
+	.col-md-12{text-align: center;}
+
+	h1{padding-bottom: 20px; width: auto;}
+	h3{font-family: $sfnt; font-size: 20px; color: $grau;}
+
+	.line{width: 25%; margin: auto; display: block; border-bottom: 2px $gold solid; }
 }

@@ -25,9 +25,26 @@
 				<h1><?php the_field('headline_kommunikation'); ?></h1>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="circles" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kommunikation-x2.png">
+			</div>
+		</div>
 	</div>
 </section>
 
+
+<section class="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><?php the_field('headline_portfolio') ?></h1>
+				<span class="line"></span>
+				<h3><?php the_field('subheadline_portfolio') ?></h3>
+			</div>
+		</div>
+	</div>
+</section>
 <!-- News Section on Frontpage -->
 <section class="news">
 	<div class="container">
