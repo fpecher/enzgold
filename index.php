@@ -44,6 +44,13 @@
 			</div>
 		</div>
 	</div>
+	<?php
+		if( have_rows('portfolio_repeater') ):
+			while ( have_rows('portfolio_repeater') ) : the_row();
+		    	
+		        the_sub_field('name');
+			endwhile;
+	?>
 </section>
 <!-- News Section on Frontpage -->
 <section class="news">
