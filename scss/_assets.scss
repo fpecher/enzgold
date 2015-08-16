@@ -87,6 +87,12 @@ input,textarea {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #eee;
 }
+
+input[type="text"], input[type="email"], textarea{
+	padding: 20px 14px;
+	border: none;
+}
+
 .ip-name {
 	width: 48%;
 	height: 50px;
@@ -126,7 +132,8 @@ input:hover, input:focus,textarea:hover, textarea:focus {
 	color: white;
 	resize: none;
 }
-button {
+
+input[type="submit"] {
 	width: 230px;
 	background: $gold;
 	height: 50px;
