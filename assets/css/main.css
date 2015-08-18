@@ -10,14 +10,7 @@
 .preview-portfolio {
   width: 50%;
   height: 400px;
-  float: left; }
-
-.pv1 {
-  background: url("../img/blurred-background-86.jpg");
-  background-size: cover; }
-
-.pv2 {
-  background: url("../img/starwarsmalaysia-.jpg");
+  float: left;
   background-size: cover; }
 
 .table {
