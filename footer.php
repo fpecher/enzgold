@@ -7,13 +7,6 @@
 		</div>
 		<div class="col-md-12">
 			<?php echo do_shortcode( '[contact-form-7 id="40" title="Kontaktformular Footer"]' ); ?>
-			<form action="post">
-				<input type="text" class="ip-name" name="name" placeholder="name">
-				<input type="text" class="ip-mail" name="e-mail" placeholder="e-mail Adresse">
-				<input type="text" class="ip-betreff" name="betreff" placeholder="betreff">
-				<textarea class="ip-nachricht" name="nachricht" placeholder="Ihre Nachricht an uns"></textarea>
-				<button>kontakt aufnehmen</button>
-			</form>
 		</div>
 	</div>
 </section>
