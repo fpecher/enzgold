@@ -20,16 +20,16 @@ add_action('wp_print_styles', 'FontAwesome');
 
 function jquery() {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', ("http://code.jquery.com/jquery-latest.min.js"), false, '');
+	wp_register_script('jquery', ("http://code.jquery.com/jquery-latest.min.js"), true);
 	wp_enqueue_script( 'jquery' );
 } 
 add_action( 'wp_enqueue_scripts', 'jquery' );
 
-function videobg(){
-	wp_register_script('videobg', 'http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js', false);
-	wp_enqueue_script('videobg');
+function maps(){
+	wp_register_script('maps', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', true);
+	wp_enqueue_script('maps');
 }
-add_action('wp_enqueue_scripts', 'videobg');
+add_action('wp_enqueue_scripts', 'maps');
 
 function main() {
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', false);  
