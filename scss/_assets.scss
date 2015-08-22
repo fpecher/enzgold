@@ -161,3 +161,12 @@ div.wpcf7-mail-sent-ok{
 
 
 .center{text-align: center;}
+
+
+//TEASER in FOOTER
+.teaser{width: 100%; height: 358px;}
+.teaser-left{
+	background: url(../img/bg-teaser-left.jpg) no-repeat;
+	
+	.table{background: rgba($grau, 0.9);}
+}

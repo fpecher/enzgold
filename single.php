@@ -44,5 +44,24 @@
 	<?php endwhile; ?>
 	<?php endif; ?>
 </section>
-
-<?php ger_footer(); ?>
+<div class="footsec">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="teaser teaser-left">
+				<div class="table">
+					<div class="table-cell">
+						<h1>über uns</h1>
+						<p>was wir tun</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="teaser teaser-right">
+				HIER IST EIN TEASER 2
+			</div>
+		</div>
+	</div>
+</div>
+<?php get_footer(); ?>
