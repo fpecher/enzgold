@@ -25,12 +25,17 @@ function jquery() {
 } 
 add_action( 'wp_enqueue_scripts', 'jquery' );
 
+function videobg(){
+	wp_register_script('videobg', 'http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js', false);
+	wp_enqueue_script('videobg');
+}
+add_action('wp_enqueue_scripts', 'videobg');
+
 function main() {
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', false);  
 	wp_enqueue_script( 'main' );
 } 
 add_action( 'wp_enqueue_scripts', 'main' );
-
 
 //MENÜS
 if ( function_exists('register_nav_menus') ) {

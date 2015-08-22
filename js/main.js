@@ -5,3 +5,9 @@ $(document).ready(function() {
         $(this).find(".pv-hover").fadeToggle(500);
     })
 })
+
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});

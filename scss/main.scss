@@ -15,6 +15,9 @@ h3{font-family: $sfnt; font-size: 20px; color: $grau; text-align: center;}
 .col-md-12{
 	img{max-width: 100%;}
 }
+.col-xs-12{
+	img{max-width: 100%; width: 100%;}
+}
 
 header{
 	position: fixed;
