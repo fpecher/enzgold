@@ -39,32 +39,39 @@
 	height: 60px;
 	-webkit-transform: rotate(-45deg) translate(-50px, 50px);
 	border: 2px solid #fff;
+
+	a{
+		display: block; width: 100%; height: 100%;
+		&:hover{
+			-webkit-filter: blur(2px); filter: blur(2px);
+		}
+	}
+
+	i{-webkit-transform: rotate(45deg) translate(10px, 11px); color: white;}
+
+
 }
-.link-box i {
-	-webkit-transform: rotate(45deg) translate(10px, 11px);
-	color: white;
-}
-.pv-hover p {
-	color: white;
-	font-family: $pfnt;
-	font-size: 20px;
-}
+
 .pv-hover {
 	display: none;
+
+	p{color: white; font-family: $pfnt;}
 }
+
 .hover-firma{
 	margin-top: 120px;
+	font-size: 20px;
 }
 .hover-branche{
 	margin-top: 14px;
+	font-style: italic;
+	font-size: 14px;
 }
 .hover-drop {
 	bottom: 0;
 	position: absolute;
 	-webkit-transform: translate(-10px, -10px);
 }
-a {text-decoration: none;}
-
 
 //FORM
 input,textarea {
