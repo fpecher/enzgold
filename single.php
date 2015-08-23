@@ -47,20 +47,36 @@
 <div class="footsec">
 	<div class="row">
 		<div class="col-md-6">
-			<div class="teaser teaser-left">
-				<div class="table">
-					<div class="table-cell">
-						<h1>über uns</h1>
-						<p>was wir tun</p>
+			<?php $valuesL = get_field('headline_footer_teaser_left');
+			
+			if($valuesL): ?>
+				<a href="<?php the_field('footer_teaser_left_link'); ?>">
+					<div class="teaser teaser-left">
+						<div class="table">
+							<div class="table-cell">
+								<h1><?php the_field('headline_footer_teaser_left'); ?></h1>
+								<p><?php the_field ('subline_footer_teaser_left'); ?></p>
+							</div>
+						</div>
 					</div>
-				</div>
-				
-			</div>
+				</a>
+			<?php endif; ?>
 		</div>
 		<div class="col-md-6">
-			<div class="teaser teaser-right">
-				HIER IST EIN TEASER 2
-			</div>
+			<?php $valuesR = get_field('headline_footer_teaser_right');
+			
+			if($valuesR): ?>
+				<a href="<?php the_field('footer_teaser_right_link'); ?>">
+					<div class="teaser teaser-right">
+						<div class="table">
+							<div class="table-cell">
+								<h1><?php the_field('headline_footer_teaser_right'); ?></h1>
+								<p><?php the_field('subline_footer_teaser_right'); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>

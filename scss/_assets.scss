@@ -164,9 +164,46 @@ div.wpcf7-mail-sent-ok{
 
 
 //TEASER in FOOTER
-.teaser{width: 100%; height: 358px;}
+
+.footsec{
+	.col-md-6{
+		padding-left: 0;
+		padding-right: 0;
+
+		img{width: 100%; max-width: 100%;}
+	}
+
+	margin: 10px 0;
+}
+
+.teaser{
+	width: 100%; height: 358px;
+	background-size: cover !important;
+
+	h1{
+		font-size: 40px; margin-bottom: 0;
+
+		&::before{
+			content: url(../img/drop-white.svg);
+			height: 83px;
+			width: auto;
+			display: block;
+			margin-bottom: 9%;
+		}
+	}
+
+	p{color: #FFF; font-family: $sfnt; font-size: 30px;}
+}
 .teaser-left{
 	background: url(../img/bg-teaser-left.jpg) no-repeat;
 	
 	.table{background: rgba($grau, 0.9);}
 }
+.teaser-right{
+	background: url(../img/bg-teaser-right.jpg) no-repeat;
+
+	h1{color: $grau;}
+	
+	.table{background: rgba($gold, 0.9);}
+}
+
