@@ -197,14 +197,39 @@ div.wpcf7-mail-sent-ok{
 .teaser-left{
 	background: url(../img/bg-teaser-left.jpg) no-repeat;
 	
-	.table{background: rgba($grau, 0.9);}
+	.table{
+		background: rgba($grau, 0.9);		
+
+		&:hover{
+			background: rgba($gold, 0.9);
+		}
+	}
+
+	&:hover{
+		h1{
+			color: $grau;
+			-webkit-transition: all 0.3ms ease-in-out;
+			-moz-transition: all 0.3ms ease-in-out;
+			-ms-transition: all 0.3ms ease-in-out;
+			-o-transition: all 0.3ms ease-in-out;
+			transition: all 0.3ms ease-in-out;
+		}
+	}
 }
 .teaser-right{
 	background: url(../img/bg-teaser-right.jpg) no-repeat;
 
 	h1{color: $grau;}
 	
-	.table{background: rgba($gold, 0.9);}
+	.table{
+		background: rgba($gold, 0.9);
+		
+		&:hover{background: rgba($grau, 0.9);}
+	}
+
+	&:hover{
+		h1{color: $gold;}
+	}
 }
 
 
