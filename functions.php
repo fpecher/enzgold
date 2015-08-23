@@ -31,6 +31,12 @@ function maps(){
 }
 add_action('wp_enqueue_scripts', 'maps');
 
+function modernizr(){
+	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', false);
+	wp_enqueue_script('modernizr');
+}
+add_action('wp_enqueue_scripts', 'modernizr');
+
 function main() {
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', false);  
 	wp_enqueue_script( 'main' );
