@@ -19,4 +19,15 @@ $(document).ready(function() {
     	$(this).parents('.cd-single-point').eq(0).removeClass('is-open').addClass('visited');
     });
 
+    $(window).scroll(function(){
+        var fromTopPx = 70; // distance to trigger
+        var scrolledFromtop = $(window).scrollTop();
+        if(scrolledFromtop > fromTopPx){
+            $('header').addClass('scrolled');
+        }else{
+            $('header').removeClass('scrolled');
+        }
+    });
+
+
 });

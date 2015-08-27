@@ -3,7 +3,7 @@
 		<div class="col-md-12">
 			<h1>kontakt</h1>
 			<span class="line"></span>
-			<h3>Lassen Sie uns was Nettes da</h3>
+			<h3>Lassen Sie uns etwas Nettes da</h3>
 		</div>
 		<div class="col-md-12">
 			<?php echo do_shortcode( '[contact-form-7 id="40" title="Kontaktformular Footer"]' ); ?>

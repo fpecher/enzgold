@@ -53,6 +53,22 @@ header{
 
 section{width: 100%; padding: 80px 0;}
 
+.scrolled{
+
+	background: rgba($grau, 0.7);
+
+	.menu-hauptmenu-container{
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		ul{
+			li{
+				a{font-size: 25px; }
+			}
+		}
+	}
+}
+
 .mt40{margin-top: 40px;}
 .mt50{margin-top: 50px;}
 .mt60{margin-top: 60px;}
