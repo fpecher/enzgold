@@ -27,6 +27,7 @@
 				<div class="col-md-4 col-xs-6">
 					<div class="pImage">
 						<img src="<?php the_sub_field('person_bild'); ?>" alt="<?php the_sub_field('person_name'); ?>">
+						<!-- <span class="addInfo">+</span> -->
 					</div>
 					<div class="pInfo">
 						<h6><?php the_sub_field('person_name'); ?></h6>

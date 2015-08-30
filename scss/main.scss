@@ -165,13 +165,25 @@ section{width: 100%; padding: 80px 0;}
 .videobg{
 	width: 100%;
 	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
 	top: 0;
 	left: 0;
-	background: url(../img/bg-head.jpg) no-repeat;
-	background-size: cover;
-
+	
+	.table{z-index: 10; position: relative;}
 	h1{color: #FFF; font-size: 60px; font-family: $pfnt, sans-serif; font-weight: 300; margin: 0; margin-top: 0; margin-bottom: 60px;}
 	p{color: #FFF; font-size: 21px; font-family: $sfnt, serif; font-weight: 400; line-height: 1.8;}
+
+	video{
+		min-width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+		position: absolute;
+		top: 0; left: 0;
+		z-index: -20;
+	}
+	.overlay{opacity: 0.6;}
 }
 
 .comm{
@@ -212,6 +224,27 @@ section{width: 100%; padding: 80px 0;}
 	}
 
 	h6{font-family: $pfnt; font-weight: 600; color: #FFF; font-size: 25px;}
+	.pImage{position: relative;}
+	
+	// .addInfo{
+	// 	position: absolute; bottom: 2%; right: 2%; background: #FFF; color: $beige; width: 45px; text-align: center;
+	// 	padding: 9px 15px; border-radius: 100%; font-size: 20px; display: block;
+	// 	-webkit-transition: all 0.2s ease-in-out;
+	// 	-moz-transition: all 0.2s ease-in-out;
+	// 	-ms-transition: all 0.2s ease-in-out;
+	// 	-o-transition: all 0.2s ease-in-out;
+	// 	transition: all 0.2s ease-in-out;
+
+	// 	&:hover{
+	// 		box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+	// 		cursor: pointer;
+	// 		-webkit-transition: all 0.2s ease-in-out;
+	// 		-moz-transition: all 0.2s ease-in-out;
+	// 		-ms-transition: all 0.2s ease-in-out;
+	// 		-o-transition: all 0.2s ease-in-out;
+	// 		transition: all 0.2s ease-in-out;
+	// 	}
+	// }
 
 	.skills{color: #FFF; font-size: 18px; font-family: $sfnt;}
 }

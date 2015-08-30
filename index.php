@@ -10,12 +10,17 @@
 
 <!-- Big video on Frontpage -->
 <section class="videobg">
+	<video autobuffer autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-head.jpg">
+	  <source src="<?php echo get_stylesheet_directory_uri(); ?>/img/video/enz.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
 	<div class="table">
 		<div class="table-cell">
 			<h1><?php the_field('headline_video'); ?></h1>
 			<p><?php the_field('introtext_video'); ?></p>
 		</div>
 	</div>
+	<div class="overlay"></div>
 </section>
 
 <section class="comm">
