@@ -17,6 +17,7 @@
 			</div>
 		</div>
 	</div>
+		
 	<div class="col-md-12 parallax mb80" style="background: url(<?php the_field('parallax_image_uber_uns'); ?>);">
 		<div class="overlay"></div>
 	</div>
