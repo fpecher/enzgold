@@ -13,8 +13,9 @@
         <?php wp_head(); ?>
 
     </head>
-    <body>
+    <body <?php body_class( $class ); ?>>
     	<header>
             <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
         </header>
 	   

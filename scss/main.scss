@@ -388,4 +388,27 @@ footer{
 
 	h1{color: #FFF; margin: 0; margin-top: 0; margin-bottom: 60px;}
 	p{color: #FFF; font-size: 21px; font-family: "Lora",serif; font-weight: 400; line-height: 1.8;}
+
 }
+
+
+//NAVI
+.home{
+	.menu-mobile-subpage-container{display: none;}
+}
+
+.page{
+	.menu-mobile-subpage-container{
+		width: 100%; background: rgba($grau, 0.7);
+	
+		ul{width: 80%; list-style-type: none;
+			
+			li{display: inline-block;
+
+				a{color: #FFF; text-decoration: none; font-size: 29px; font-family: $pfnt;}
+			}
+		}
+	}
+}
+
+
