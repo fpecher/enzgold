@@ -344,11 +344,11 @@ footer{
 
 .hero{
 	padding: 0;
-	max-height: 70vh; overflow: hidden;
+	max-height: 70vh; overflow: hidden; position: relative;
 
 	img{width: 100%; height: auto}
 
-	.overlay{max-height: 70vh;}
+	.overlay{max-height: 100%;}
 }
 
 .portfolioitem{
@@ -360,6 +360,8 @@ footer{
 		img{width: 100%;}
 	}
 
+	img{max-width: 100%; height: auto !important;}
+	
 	h5{
 		font-family: $sfnt; font-size: 40px; color: $gold; margin-top: 40px; margin-left: 80px;
 
