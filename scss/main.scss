@@ -9,8 +9,38 @@ body{overflow-x: hidden;}
 
 h1{font-size: 60px; color: $gold; font-family: $pfnt; font-weight: 300; text-align: center; margin-top: 0;}
 h3{font-family: $sfnt; font-size: 20px; color: $grau; text-align: center;}
-p{font-family: $sfnt; font-size: 21px; line-height: 1.7; color: $grau;
+p{font-family: $sfnt; font-size: 21px; line-height: 1.7; color: $grau; margin-bottom: 2%;
 	strong{font-weight: 700;}
+
+	a{
+		color: $beige; text-decoration: none;
+		-webkit-transition: color 0.2s ease-in-out;
+		-moz-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		-o-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		position: relative;
+
+		&:hover{
+			color: $gold;
+			text-decoration: none;
+			-webkit-transition: color 0.2s ease-in-out;
+			-moz-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			-o-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+
+			&:before{
+				content: '';
+				width: 45px;
+				height: 0;
+				border: 1px $gold solid;
+				position: absolute;
+				left: 0%;
+				bottom: -35%;
+			}
+		}
+	}
 }
 
 
