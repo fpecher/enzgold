@@ -361,11 +361,11 @@ footer{
 	}
 
 	img{max-width: 100%; height: auto !important;}
-	
-	h5{
-		font-family: $sfnt; font-size: 40px; color: $gold; margin-top: 40px; margin-left: 80px;
 
-		&:after{content:''; border-top: 1px $gold solid; max-width: 100px; margin-top: 30px; display: block;}
+	h5{
+		font-family: $sfnt; font-size: 40px; color: $beige; margin-top: 40px; margin-left: 80px;
+
+		&:after{content:''; border-top: 1px $beige solid; max-width: 100px; margin-top: 30px; display: block;}
 	}
 	p{margin-top: 30px; font-family: $sfnt; color: $grau; font-size: 21px; line-height: 1.8; margin-left: 80px; max-width: 75%;}
 }
