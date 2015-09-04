@@ -16,6 +16,16 @@
     <body <?php body_class( $class ); ?>>
     	<header>
             <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-            <?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
+            <div class="subpage-menu">
+                <a href="<?php echo site_url(); ?>">
+                    <div class="logo">
+                        <img src="<?php echo get_stylesheet_directory_uri();?>//img/drop-white.svg" alt="enzgold">
+                    </div>
+                </a>
+                <?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
+                <div class="toggle">
+                    <span class="toggler">Menu</span>
+                </div>
+            </div>
         </header>
 	   

@@ -29,5 +29,8 @@ $(document).ready(function() {
         }
     });
 
+    $('.toggler').on('click', function(){
+        $('#menu-mobile-subpage').fadeToggle();
+    });
 
 });

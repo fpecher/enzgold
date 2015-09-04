@@ -7,17 +7,27 @@
 ?>
 <?php get_header(); ?>
 
-<section class="hero">
+<section class="hero"> 
 	<?php the_post_thumbnail();?>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="portfolio_headline">
+					<?php the_field('headline_portfolio_item'); ?>
+				</h1>
+			</div>
+		</div>
+	</div>
 	<div class="overlay"></div>
 </section>
 
 <section class="portfolioitem">
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-md-12">
 			<h1><?php the_field('headline_portfolio_item'); ?></h1>
 		</div>
-	</div>
+	</div> -->
 	<?php if( have_rows('portfolio_row') ): ?>
 	<?php while ( have_rows('portfolio_row') ) : the_row(); ?>
 	<div class="row">
