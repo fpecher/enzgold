@@ -408,16 +408,25 @@ footer{
 		
 		.logo{
 			background: $gold; width: 70px; height: 70px; float: left; text-align: center;
-			
-			img{width: 30px; margin-top: 18%;}
+			-webkit-perspective: 1200px;
+			    -moz-perspective: 1200px;
+			    -ms-perspective: 1200px;
+			    perspective: 1200px;
 
-			&:hover{ cursor: pointer;
+			img{width: 30px; margin-top: 18%;}
+				
+			&:hover{cursor: pointer;
+
 				img{
-					-moz-transform: rotate(180deg);
-					-webkit-transform: rotate(180deg);
-					-o-transform: rotate(180deg);
-					-ms-transform: rotate(180deg);
-					transform: rotate(180deg);
+					-webkit-animation-name: spinner;
+					-webkit-animation-timing-function: linear;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-animation-duration: 2s;
+
+					animation-name: spinner;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
+					animation-duration: 2s;
 				}
 			}
 		}
@@ -442,6 +451,7 @@ footer{
 					font-family: 'FontAwesome';
 					color: #FFF;
 					font-size: 15px;
+					display: inline-block;
 				}
 			}
 
@@ -453,6 +463,24 @@ footer{
 				}
 			}
 		}
+
+		@-webkit-keyframes spinner {
+			from { -webkit-transform: rotateY(0deg);    }
+			to   { -webkit-transform: rotateY(-360deg); }
+		}
+
+		@keyframes spinner {
+		    from {
+		      -moz-transform: rotateY(0deg);
+		      -ms-transform: rotateY(0deg);
+		      transform: rotateY(0deg);
+		    }
+		    to {
+		      -moz-transform: rotateY(-360deg);
+		      -ms-transform: rotateY(-360deg);
+		      transform: rotateY(-360deg);
+		    }
+		  }
 	
 		ul{width: 100%; list-style-type: none; margin: 0;
 			
