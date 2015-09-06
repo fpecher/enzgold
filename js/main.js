@@ -29,8 +29,54 @@ $(document).ready(function() {
         }
     });
 
-    $('.toggler').on('click', function(){
-        $('#menu-mobile-subpage').fadeToggle();
+    $(".toggler").click(function(event){
+        event.preventDefault();
+        if ( $(this).hasClass("open") ) {
+
+            $('.hiddennav').animate({
+               right: "-300px"
+            }, 500, function(){
+               $('.toggle').animate({
+                   right: '2%'
+               }, 200);
+            });
+
+        } else {
+            
+            $('.toggle').animate({
+                right: '26%'
+            }, 500, function(){
+                $('.hiddennav').animate({
+                    right: '0'
+                }, 200);
+                $('.subpage-menu').css('background', 'rgba(84, 84, 84, 1)');
+            });
+
+        }
+        $(this).toggleClass("open");
+        return false;
     });
 
+    $('.closer').on('click', function(){
+        $('.hiddennav').animate({
+           right: "-300px"
+        }, 500, function(){
+           $('.toggle').animate({
+               right: '2%'
+           }, 200);
+        });
+    });
+
+    $(document).bind('keydown',function(e){
+          if ( e.which == 27 ) {
+                      
+             $('.hiddennav').animate({
+                right: "-300px"
+             }, 500, function(){
+                $('.toggle').animate({
+                    right: '2%'
+                }, 200);
+             });
+          };
+    });
 });
