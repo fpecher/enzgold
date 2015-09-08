@@ -9,17 +9,24 @@
 
 <section class="hero"> 
 	<?php the_post_thumbnail();?>
-	
+	<h1 class="portfolio_headline">
+		<?php the_field('headline_portfolio_item'); ?>
+		<span><?php the_field('portfolio_typ'); ?></span>
+	</h1>
 	<div class="container">
-		<div class="row">
+		<div class="table">
+			<div class="table-cell">
+				
+			</div>
+		</div>
+		<!-- <div class="row">
 			<div class="col-md-12">
 				<h1 class="portfolio_headline">
 					<?php the_field('headline_portfolio_item'); ?>
 				</h1>
 			</div>
-		</div>
+		</div> -->
 	</div>
-	<div class="overlay"></div>
 </section>
 
 <section class="portfolioitem">

@@ -344,17 +344,21 @@ footer{
 
 .hero{
 	padding: 0;
-	max-height: 70vh; overflow: hidden; position: relative;
+	max-height: 70vh; overflow: hidden; position: relative; height: 70vh;
 	
-	img{width: 100%; height: auto;}
+	img{width: 100%; height: auto; position: fixed;}
 	
 	.overlay{max-height: 100%;}
 	
-	h1{position: absolute; width: 100%; text-align: center; bottom: 30px; color: #FFF !important; z-index: 999;}
+	h1{position: absolute; width: auto; text-align: center; bottom: 30px; font-size: 30px; color: #FFF !important; z-index: 999;
+	background: $gold; padding: 20px 30px 20px 70px;
+
+	span{font-size: 15px; font-family: $sfnt; display: block;}
+	}
 }
 
-.portfolioitem{
-		h1{margin-bottom: 70px;}
+.portfolioitem{ position: relative; background: #FFF;
+		h1{margin-bottom: 70px; }
 
 	.col-md-6{
 		padding-right: 0;
