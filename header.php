@@ -14,24 +14,17 @@
 
     </head>
     <body <?php body_class( $class ); ?>>
-    	<header>
-            <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-            <div class="subpage-menu">
-                <a href="<?php echo site_url(); ?>">
-                    <div class="logo">
-                        <img src="<?php echo get_stylesheet_directory_uri();?>//img/drop-white.svg" alt="enzgold">
+        	<header>
+                <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+                <div class="subpage-menu">
+                    <a href="<?php echo site_url(); ?>">
+                        <div class="logo">
+                            <img src="<?php echo get_stylesheet_directory_uri();?>//img/drop-white.svg" alt="enzgold">
+                        </div>
+                    </a>
+                    <div class="toggle">
+                        <span class="toggler">Menu</span>
                     </div>
-                </a>
-                <div class="hiddennav">
-                    <div class="closer">
-                        <!-- <i class="fa fa-times"></i> -->
-                        <span class="x"></span>
-                    </div>
-                    <?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
                 </div>
-                <div class="toggle">
-                    <span class="toggler">Menu</span>
-                </div>
-            </div>
-        </header>
+            </header>
 	   

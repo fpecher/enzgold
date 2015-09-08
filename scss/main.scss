@@ -53,6 +53,114 @@ p{font-family: $sfnt; font-size: 21px; line-height: 1.7; color: $grau; margin-bo
 	img{max-width: 100%; width: 100%;}
 }
 
+
+//MOBILE NAV
+.cont{background:url("../img/wasser.jpg");}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html, 
+body, 
+.container, 
+.content-wrap {
+	width: 100%;
+	height: 100%;
+}
+button:active, button:focus {
+	outline: none;
+}
+.content-wrap {
+	background: #DCD8CD;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+.content {
+	position: relative;
+	background: #b4bad2;
+}
+/* Menu Button */
+.menu-button {
+	position: fixed;
+	z-index: 1000;
+	right: 1em;
+	top: .7em;
+	padding: 0;
+	width: 2.5em;
+	height: 2.25em;
+	border: none;
+	text-indent: 2.5em;
+	font-size: 1.5em;
+	color: transparent;
+	background: transparent;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+
+	&::before {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		bottom: 0.5em;
+		left: 0.5em;
+		background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+		content: '';
+	}
+	&:hover {
+		opacity: 0.6;
+	}
+}
+/* Menu */
+.menu-wrap {
+	position: absolute;
+	font-weight: 700;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.menu-side {
+	right: 0;
+	top: 80px;
+	width: 200px;
+	position: fixed;
+
+	a {
+		display: block;
+		font-size: 30px;
+		color: #535353;
+		font-weight: 400;
+		margin-bottom: 30px;
+
+		&:hover {
+			color: #444444;
+		}
+	}
+}
+/* Shown menu */
+.show-menu {
+	.menu-wrap {
+		opacity: 1;
+	}
+	.content-wrap {
+		-webkit-transform: translate3d(-250px,80px,0);
+		transform: translate3d(-250px,80px,0);
+	}
+	.menu-button {
+		-webkit-transform: translate3d(-250px,80px,0);
+		transform: translate3d(-250px,80px,0);
+	}
+	.content::before {
+		opacity: 1;
+		-webkit-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+}
+//MOBILE NAV ENDE
+
 header{
 	position: fixed;
 	top: 0px;
@@ -357,6 +465,51 @@ footer{
 	}
 }
 
+.metanav{
+	position: fixed;
+	top: 70px;
+	right: -70px;
+	a{display: block;}
+	
+	span{background: $beige; color: $grau; padding: 5px 30px; display: block; width: 70px; height: 70px; position: relative;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			background: $gold;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	.next{
+		&:before{
+			content: ''; width: 20px; height: 2px; background: $grau; position: absolute; top: 41px; transform: rotate(-45deg); font-size: 40px; text-align: center;
+		}
+		&:after{
+			content: ''; width: 20px; height: 2px; background: $grau; position: absolute; top: 27px; transform: rotate(45deg); font-size: 40px; text-align: center;
+		}
+		&:hover{
+			&:before, &:after{background: #FFF; cursor: pointer;}
+		}
+	}
+	.prev{
+		&:before{
+			content: ''; width: 20px; height: 2px; left: 35%; background: $grau; position: absolute; top: 41px; transform: rotate(45deg); font-size: 40px; text-align: center;
+		}
+		&:after{
+			content: ''; width: 20px; height: 2px; left: 35%; background: $grau; position: absolute; top: 27px; transform: rotate(-45deg); font-size: 40px; text-align: center;
+		}
+		&:hover{
+			&:before, &:after{background: #FFF; cursor: pointer;}
+		}
+	}
+}
+
 .portfolioitem{ position: relative; background: #FFF;
 		h1{margin-bottom: 70px; }
 
@@ -400,14 +553,16 @@ footer{
 
 //NAVI
 .home{
-	.menu-mobile-subpage-container{display: none;}
-	.subpage-menu{display: none;}
+	.menu-hauptmenu-container{display: none;}
+	// .menu-mobile-subpage-container{display: none;}
+	// .subpage-menu{display: none;}
 }
 
-.single, .page-template-about, .page-template-kontakt, .page-template-kontakt, .page-template-default{
+.home, .single, .page-template-about, .page-template-kontakt, .page-template-kontakt, .page-template-default{
 	.menu-hauptmenu-container{display: none;}
 	// #menu-mobile-subpage{display: none;}
 	.subpage-menu{
+		display: none;
 		width: 100%; background: rgba($grau, 0.8); height: 70px; position: relative;
 		
 		.logo{

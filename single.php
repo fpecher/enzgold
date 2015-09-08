@@ -61,6 +61,15 @@
 	<?php endwhile; ?>
 	<?php endif; ?>
 </section>
+<div class="metanav">
+	<a href="">
+		<?php next_post_link( '<strong>%link</strong>' ); ?>
+		<span class="prev"></span>
+	</a>
+	<a href="">
+		<span class="next"></span>
+	</a>
+</div>
 <div class="footsec">
 	<div class="row">
 		<div class="col-md-6">
