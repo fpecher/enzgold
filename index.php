@@ -6,7 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
-
+<div class="content-wrap">
 <!-- Big video on Frontpage -->
 <section class="videobg">
 	<video autobuffer autoplay muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-head.jpg">

@@ -33,9 +33,9 @@ $(document).ready(function() {
         var fromTopPx = 1; // distance to trigger
         var scrolledFromtop = $(window).scrollTop();
         if(scrolledFromtop > fromTopPx){
-            $('.subpage-menu').css('display','block');
+            $('.subpage-menu').slideDown();
         }else{
-            $('.subpage-menu').css('display','none');
+            $('.subpage-menu').slideUp();
         }
     });
 
