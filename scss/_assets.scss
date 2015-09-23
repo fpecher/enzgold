@@ -166,6 +166,8 @@ div.wpcf7-mail-sent-ok{
 //TEASER in FOOTER
 
 .footsec{
+  background: #FFF;
+  
 	.col-md-6{
 		padding-left: 0;
 		padding-right: 0;
@@ -173,7 +175,7 @@ div.wpcf7-mail-sent-ok{
 		img{width: 100%; max-width: 100%;}
 	}
 
-	margin: 10px 0;
+	padding: 10px 0;
 }
 
 .teaser{
@@ -190,7 +192,19 @@ div.wpcf7-mail-sent-ok{
 			display: block;
 			margin-bottom: 9%;
 		}
+
+    &:hover{
+      animation-name: moveDrop;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
 	}
+  
+  @keyframes moveDrop {
+      0%   {margin-top: 0px;}
+      50%  {margin-top:-50px;}
+      100% {margin-top: -50px;}
+  }
 
 	p{color: #FFF; font-family: $sfnt; font-size: 30px;}
 }

@@ -7,12 +7,14 @@
 ?>
 <?php get_header(); ?>
 
-<section class="hero"> 
-	<?php the_post_thumbnail();?>
-	<h1 class="portfolio_headline">
-		<?php the_field('headline_portfolio_item'); ?>
-		<span><?php the_field('portfolio_typ'); ?></span>
-	</h1>
+<section class="hero">
+	<div>
+		<?php the_post_thumbnail();?>
+	</div>
+	<div class="blur">
+		<div class='blur' style="background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/40/darken/50/blur/50/1*4ncz3hLxmL8E_bUh-0z62w.jpeg')"></div>
+	</div>
+
 	<div class="container">
 		<div class="table">
 			<div class="table-cell">
@@ -30,6 +32,10 @@
 </section>
 
 <section class="portfolioitem">
+	<h1 class="portfolio_headline">
+		<?php the_field('headline_portfolio_item'); ?>
+		<span><?php the_field('portfolio_typ'); ?></span>
+	</h1>
 	<!-- <div class="row">
 		<div class="col-md-12">
 			<h1><?php the_field('headline_portfolio_item'); ?></h1>
@@ -59,17 +65,16 @@
 	</div>
 	<?php endif; ?>
 	<?php endwhile; ?>
+	<div class="metanav">
+		<a href="">
+			<span class="prev"></span>
+		</a>
+		<a href="">
+			<span class="next"></span>
+		</a>
+	</div>
 	<?php endif; ?>
 </section>
-<div class="metanav">
-	<a href="">
-		<?php next_post_link( '<strong>%link</strong>' ); ?>
-		<span class="prev"></span>
-	</a>
-	<a href="">
-		<span class="next"></span>
-	</a>
-</div>
 <div class="footsec">
 	<div class="row">
 		<div class="col-md-6">
