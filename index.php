@@ -15,8 +15,8 @@
 	</video>
 	<div class="table">
 		<div class="table-cell">
-			<h1><?php the_field('headline_video'); ?></h1>
-			<p><?php the_field('introtext_video'); ?></p>
+			<h1 data-sr="enter top, wait 1s"><?php the_field('headline_video'); ?></h1>
+			<p data-sr="enter top, wait 1.5s"><?php the_field('introtext_video'); ?></p>
 		</div>
 	</div>
 	<div class="overlay"></div>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<img class="circles" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kommunikation-x2.png">
+				<img class="circles" data-sr="move 100px" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kommunikation-x2.png">
 			</div>
 		</div>
 	</div>
@@ -53,7 +53,7 @@
 		<?php if( have_rows('portfolio_repeater') ): ?>
 		<div class="row">
 			<?php while ( have_rows('portfolio_repeater') ) : the_row(); ?>
-			<div class="preview-portfolio item col-md-6 col-xs-12" style="background: url('<?php the_sub_field('image'); ?>') no-repeat; background-size: cover;">
+			<div data-sr="move 100px" class="preview-portfolio item col-md-6 col-xs-12" style="background: url('<?php the_sub_field('image'); ?>') no-repeat; background-size: cover;">
 				<div class="table">
 					<div class="table-cell">
 						<div class="pv-hover">
@@ -100,7 +100,7 @@
 				<p class="quote"><?php the_field('zitat_leitbild'); ?></p>	
 			</div>
 			<div class="col-md-6 col-xs-12">
-				<img src="<?php the_field('bild_zitat'); ?>">
+				<img data-sr="enter right" src="<?php the_field('bild_zitat'); ?>">
 			</div>
 		</div>
 		<div class="row">

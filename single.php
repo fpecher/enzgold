@@ -11,10 +11,6 @@
 	<div>
 		<?php the_post_thumbnail();?>
 	</div>
-	<div class="blur">
-		<div class='blur' style="background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/40/darken/50/blur/50/1*4ncz3hLxmL8E_bUh-0z62w.jpeg')"></div>
-	</div>
-
 	<div class="container">
 		<div class="table">
 			<div class="table-cell">
@@ -46,7 +42,7 @@
 	<div class="row">
 		
 		<div class="col-md-12">
-			<div class="row">
+			<div class="row" data-sr="enter bottom">
 				<?php the_sub_field('inhalt'); ?>
 			</div>
 		</div>
@@ -59,7 +55,7 @@
 	if( !empty($image) ):
 	?>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" data-sr="enter bottom">
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</div>
 	</div>

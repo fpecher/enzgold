@@ -37,6 +37,12 @@ function modernizr(){
 }
 add_action('wp_enqueue_scripts', 'modernizr');
 
+function reveal(){
+	wp_register_script('reveal', get_template_directory_uri() . '/js/scrollReveal.min.js', false);
+	wp_enqueue_script('reveal');
+}
+add_action('wp_enqueue_scripts', 'reveal');
+
 function main() {
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', false);  
 	wp_enqueue_script( 'main' );

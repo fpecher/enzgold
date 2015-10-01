@@ -1,6 +1,9 @@
 //main.js
 
 $(document).ready(function() {
+    
+    window.sr = new scrollReveal();
+
     $(".item").hover(function () {
         $(this).find(".pv-hover").fadeToggle(500);
     });
@@ -104,6 +107,7 @@ $(document).ready(function() {
           };
     });
 });
+
 
 
 // /**

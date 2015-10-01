@@ -210,12 +210,22 @@ div.wpcf7-mail-sent-ok{
 }
 .teaser-left{
 	background: url(../img/bg-teaser-left.jpg) no-repeat;
-	
+
 	.table{
-		background: rgba($grau, 0.9);		
+		background: rgba($grau, 0.9);
+      -webkit-transition: background 0.3ms ease-in-out;
+      -moz-transition: background 0.3ms ease-in-out;
+      -ms-transition: background 0.3ms ease-in-out;
+      -o-transition: background 0.3ms ease-in-out;
+      transition: background 0.3ms ease-in-out;
 
 		&:hover{
 			background: rgba($gold, 0.9);
+      -webkit-transition: background 0.3ms ease-in-out;
+      -moz-transition: background 0.3ms ease-in-out;
+      -ms-transition: background 0.3ms ease-in-out;
+      -o-transition: background 0.3ms ease-in-out;
+      transition: background 0.3ms ease-in-out;
 		}
 	}
 
@@ -232,13 +242,25 @@ div.wpcf7-mail-sent-ok{
 }
 .teaser-right{
 	background: url(../img/bg-teaser-right.jpg) no-repeat;
-
+  
 	h1{color: $grau;}
 	
 	.table{
 		background: rgba($gold, 0.9);
+    -webkit-transition: background 0.3ms ease-in-out;
+    -moz-transition: background 0.3ms ease-in-out;
+    -ms-transition: background 0.3ms ease-in-out;
+    -o-transition: background 0.3ms ease-in-out;
+    transition: background 0.3ms ease-in-out;
 		
-		&:hover{background: rgba($grau, 0.9);}
+		&:hover{
+      background: rgba($grau, 0.9);
+      -webkit-transition: background 0.3ms ease-in-out;
+      -moz-transition: background 0.3ms ease-in-out;
+      -ms-transition: background 0.3ms ease-in-out;
+      -o-transition: background 0.3ms ease-in-out;
+      transition: background 0.3ms ease-in-out;
+    }
 	}
 
 	&:hover{
