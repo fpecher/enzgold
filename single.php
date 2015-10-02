@@ -61,14 +61,24 @@
 	</div>
 	<?php endif; ?>
 	<?php endwhile; ?>
+	<?php
+	$next_post = get_next_post();
+	$prev_post = get_previous_post();
+	if (!empty( $next_post || $prev_post)): ?>
+	<?php
+		if(empty ($prev_post)){
+			$prev_post = get_next_post();
+		};
+	?>
 	<div class="metanav">
-		<a href="">
+		<a href="<?php echo get_permalink( $prev_post->ID ); ?>">
 			<span class="prev"></span>
 		</a>
-		<a href="">
+		<a href="<?php echo get_permalink( $next_post->ID ); ?>">
 			<span class="next"></span>
 		</a>
 	</div>
+	<?php endif; ?>
 	<?php endif; ?>
 </section>
 <div class="footsec">
