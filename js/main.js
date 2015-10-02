@@ -106,9 +106,17 @@ $(document).ready(function() {
              });
           };
     });
+
+    //Logo is Anker ToTop if on Home
+    $('.home .logolink').on('click', function(){
+
+        $(this).prop("href", "#");
+        
+        $('body').scrollTo(0, 800);
+
+        return false;
+    });
 });
-
-
 
 // /**
 //  * main.js

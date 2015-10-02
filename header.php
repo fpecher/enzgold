@@ -17,7 +17,7 @@
         	<header>
                 <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
                 <div class="subpage-menu">
-                    <a href="<?php echo site_url(); ?>">
+                    <a href="<?php echo site_url(); ?>" class="logolink">
                         <div class="logo">
                             <img src="<?php echo get_stylesheet_directory_uri();?>//img/drop-white.svg" alt="enzgold">
                         </div>

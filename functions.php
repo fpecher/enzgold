@@ -43,6 +43,12 @@ function reveal(){
 }
 add_action('wp_enqueue_scripts', 'reveal');
 
+function scrollto(){
+	wp_register_script('scrollto', 'http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js', false);
+	wp_enqueue_script('scrollto');
+}
+add_action('wp_enqueue_scripts', 'scrollto');
+
 function main() {
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', false);  
 	wp_enqueue_script( 'main' );
