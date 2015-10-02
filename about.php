@@ -12,20 +12,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1><?php the_field('headline_uber_uns'); ?></h1>
-				<p class="center mt40 mb80"><?php the_field('introtext_uber_uns'); ?></p>
+				<h1 data-sr="enter top, wait 1s"><?php the_field('headline_uber_uns'); ?></h1>
+				<p data-sr="enter top, wait 1.5s" class="center mt40 mb80"><?php the_field('introtext_uber_uns'); ?></p>
 			</div>
 		</div>
 	</div>
 		
-	<div class="col-md-12 parallax mb80" style="background: url(<?php the_field('parallax_image_uber_uns'); ?>);">
+	<div data-sr="enter bottom, wait 2s" class="col-md-12 parallax mb80" style="background: url(<?php the_field('parallax_image_uber_uns'); ?>);">
 		<div class="overlay"></div>
 	</div>
 	<?php if( have_rows('team_repeater') ): ?>
 	<div class="container">
 		<div class="row">
 			<?php while ( have_rows('team_repeater') ) : the_row(); ?>
-				<div class="col-md-4 col-xs-6">
+				<div class="col-md-4 col-xs-6" data-sr="enter left">
 					<div class="pImage">
 						<img src="<?php the_sub_field('person_bild'); ?>" alt="<?php the_sub_field('person_name'); ?>">
 						<!-- <span class="addInfo">+</span> -->
@@ -60,13 +60,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1><?php the_field('headline_leistungen'); ?></h1>
-				<span class="line"></span>
-				<h3><?php the_field('subheadline_leistungen'); ?></h3>
+				<h1 data-sr="enter top, wait 1s"><?php the_field('headline_leistungen'); ?></h1>
+				<span data-sr="enter top, wait 1.2s" class="line"></span>
+				<h3 data-sr="enter top, wait 1.5s"><?php the_field('subheadline_leistungen'); ?></h3>
 			</div>
 		</div>
 	</div>
-	<div class="imagemap mt60 cd-product-wrapper">
+	<div class="imagemap mt60 cd-product-wrapper" data-sr="enter bottom">
 		<img src="<?php the_field('bild_leistungen'); ?>">
 		<?php if( have_rows('repeater_leistungen') ): ?>
 		<ul>

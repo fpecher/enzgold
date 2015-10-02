@@ -1,4 +1,4 @@
-	<section class="kontakt" data-sr="enter bottom">
+	<section class="kontakt">
 		<div class="container">
 			<div class="col-md-12">
 				<h1>kontakt</h1>
