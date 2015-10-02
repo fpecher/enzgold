@@ -40,7 +40,7 @@
 	</div>
 	<?php endif; ?>
 </section>
-<section class="manifest pb100">
+<section class="manifest pb100" data-sr="enter bottom">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

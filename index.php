@@ -86,7 +86,7 @@
 	</div>
 </section>
 
-<section class="leitbild">
+<section class="leitbild" data-sr="enter bottom">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -100,7 +100,7 @@
 				<p class="quote"><?php the_field('zitat_leitbild'); ?></p>	
 			</div>
 			<div class="col-md-6 col-xs-12">
-				<img data-sr="enter right" src="<?php the_field('bild_zitat'); ?>">
+				<img src="<?php the_field('bild_zitat'); ?>">
 			</div>
 		</div>
 		<div class="row">
