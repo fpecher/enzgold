@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="row">
 			<?php while ( have_rows('team_repeater') ) : the_row(); ?>
-				<div class="col-md-4 col-xs-6" data-sr="enter left">
+				<div class="col-lg-4 col-md-4 col-xs-6 member" data-sr="enter left">
 					<div class="pImage">
 						<img src="<?php the_sub_field('person_bild'); ?>" alt="<?php the_sub_field('person_name'); ?>">
 						<!-- <span class="addInfo">+</span> -->
@@ -92,7 +92,7 @@
 </section>
 <div class="footsec">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-6 col-xs-12">
 			<?php $valuesL = get_field('headline_footer_teaser_left');
 			
 			if($valuesL): ?>
@@ -108,7 +108,7 @@
 				</a>
 			<?php endif; ?>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 col-xs-12">
 			<?php $valuesR = get_field('headline_footer_teaser_right');
 			
 			if($valuesR): ?>

@@ -61,7 +61,7 @@
 								<div class="link-box"><a href="<?php the_sub_field('link'); ?>"><i class="fa fa-link fa-2x"></i></a></div>
 								<p class="hover-firma" ><?php the_sub_field('name'); ?></p>
 								<p class="hover-branche" ><?php the_sub_field('branche'); ?></p>
-								<svg version="1.1" class="hover-icon hover-drop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								<svg version="1.1" id="drop" class="hover-icon hover-drop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="19px" height="24px" viewBox="0 0 262 329" enable-background="new 0 0 262 329" xml:space="preserve">
 									<path fill="#FFFFFF" d="M130.167,315.683c-48.191,0-88.827-28.505-108.699-76.252C15.186,224.335,12,208.345,12,191.908
 										c0-31.031,19.417-57.915,20.245-59.043c5.164-7.057,13.631-18.589,18.816-25.629l64.044-86.976

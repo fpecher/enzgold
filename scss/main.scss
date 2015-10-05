@@ -614,3 +614,8 @@ footer{
 	}
 }
 
+
+@media screen and (max-width: 995px){
+	.member:nth-child(2){display: none;}
+	.member{margin-bottom: 20px;}
+}
