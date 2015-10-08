@@ -368,7 +368,7 @@ footer{
 	
 	a{display: block;}
 	
-	span{background: $beige; color: $grau; padding: 5px 30px; display: block; width: 70px; height: 70px; position: relative;
+	span{background: rgba($grau,0.9); color: $gold; padding: 5px 30px; display: block; width: 70px; height: 70px; position: relative;
 		-webkit-transition: all 0.3s ease-in-out;
 		-moz-transition: all 0.3s ease-in-out;
 		-ms-transition: all 0.3s ease-in-out;
@@ -385,10 +385,10 @@ footer{
 	}
 	.next{
 		&:before{
-			content: ''; width: 20px; height: 2px; background: $grau; position: absolute; top: 41px; transform: rotate(-45deg); font-size: 40px; text-align: center;
+			content: ''; width: 20px; height: 2px; background: $beige; position: absolute; top: 41px; transform: rotate(-45deg); font-size: 40px; text-align: center;
 		}
 		&:after{
-			content: ''; width: 20px; height: 2px; background: $grau; position: absolute; top: 27px; transform: rotate(45deg); font-size: 40px; text-align: center;
+			content: ''; width: 20px; height: 2px; background: $beige; position: absolute; top: 27px; transform: rotate(45deg); font-size: 40px; text-align: center;
 		}
 		&:hover{
 			&:before, &:after{background: #FFF; cursor: pointer;}
@@ -396,10 +396,10 @@ footer{
 	}
 	.prev{
 		&:before{
-			content: ''; width: 20px; height: 2px; left: 35%; background: $grau; position: absolute; top: 41px; transform: rotate(45deg); font-size: 40px; text-align: center;
+			content: ''; width: 20px; height: 2px; left: 35%; background: $beige; position: absolute; top: 41px; transform: rotate(45deg); font-size: 40px; text-align: center;
 		}
 		&:after{
-			content: ''; width: 20px; height: 2px; left: 35%; background: $grau; position: absolute; top: 27px; transform: rotate(-45deg); font-size: 40px; text-align: center;
+			content: ''; width: 20px; height: 2px; left: 35%; background: $beige; position: absolute; top: 27px; transform: rotate(-45deg); font-size: 40px; text-align: center;
 		}
 		&:hover{
 			&:before, &:after{background: #FFF; cursor: pointer;}
