@@ -45,7 +45,7 @@
 	<?php
 	$next_post = get_next_post();
 	$prev_post = get_previous_post();
-	if (!empty( $next_post || $prev_post)): ?>
+	if (!empty( $next_post)): ?>
 	<?php
 		// if(empty ($prev_post)){
 		// 	$prev_post = get_next_post();
