@@ -58,7 +58,7 @@
 					<div class="table-cell">
 						<div class="pv-hover">
 							<div class="square">
-								<div class="link-box"><a href="<?php the_sub_field('link'); ?>"><i class="fa fa-link fa-2x"></i></a></div>
+								<div class="link-box"><a href="<?php the_sub_field('link'); ?>"><i class="fa fa-clone fa-2x"></i></a></div>
 								<p class="hover-firma" ><?php the_sub_field('name'); ?></p>
 								<p class="hover-branche" ><?php the_sub_field('branche'); ?></p>
 								<svg version="1.1" id="drop" class="hover-icon hover-drop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

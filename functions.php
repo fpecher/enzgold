@@ -13,7 +13,7 @@ function main_style() {
 add_action('wp_print_styles', 'main_style');
 
 function FontAwesome() {
-	wp_register_style('FontAwesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+	wp_register_style('FontAwesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
     wp_enqueue_style( 'FontAwesome');
 }
 add_action('wp_print_styles', 'FontAwesome');
